@@ -1,9 +1,11 @@
+let btn;
+
 function setup() {
   createCanvas(400, 400);
 }
 
 function draw() {
-  background(220);
+  background(random(255), random(255), random(255), random(255));
 
   ellipse(70, 70, 90, 90);
   ellipse(70, 80, 90, 90);
