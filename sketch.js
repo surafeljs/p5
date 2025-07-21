@@ -1,11 +1,12 @@
 let btn;
-
+let txt;
 function setup() {
   createCanvas(400, 400);
 }
 
 function draw() {
-  background(random(255), random(255), random(255), random(255));
+  // background(random(255), random(255), random(255), random(255));
+  background("pink");
 
   ellipse(70, 70, 90, 90);
   ellipse(70, 80, 90, 90);
