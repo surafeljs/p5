@@ -1,17 +1,26 @@
+let w;
+let h;
+let r;
+let g;
+let b;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(640, 360);
+  background(0);
 }
 
 function draw() {
-  // background(random(255), random(255), random(255), random(255));
+  rectMode("center");
+  noStroke();
 
-  background("pink");
-  rect(50, 50, 150, 100);
-  rect(60, 60, 150, 100);
-  rect(70, 70, 150, 100);
-  ellipse(180, 150, 100, 100);
-  ellipse(190, 160, 100, 100);
-  ellipse(200, 170, 100, 100);
-
-  fill("yellow");
+  w = floor(random(width));
+  h = floor(random(height));
+  r = floor(random(0, 255));
+  g = floor(random(0, 255));
+  b = floor(random(0, 255));
+  fill(r, g, b);
+  circle(w, h, 10);
 }
+// function mousePressed() {
+//   background(mouseX, mouseY, 0);
+// }
