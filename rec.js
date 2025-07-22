@@ -19,7 +19,7 @@ function draw() {
   g = floor(random(0, 255));
   b = floor(random(0, 255));
   fill(r, g, b);
-  circle(w, h, 10);
+  circle(w, h, 15);
 }
 // function mousePressed() {
 //   background(mouseX, mouseY, 0);
