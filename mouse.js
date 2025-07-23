@@ -9,13 +9,14 @@ function preload(params) {
 
 function setup() {
   createCanvas(1240, 600);
-  background(mouseY);
 }
 function draw(params) {
-  fill(mouseX, mouseY, a);
-  circle(mouseX, mouseY, 30);
-}
-function mousePressed(params) {
+  //   fill(mouseX, mouseY, a);
   background(0);
-  fill(mouseX, mouseY, a);
+  circle(mouseX + 50, mouseY, 30);
+  circle(mouseX - 50, mouseY, 30);
 }
+// function mousePressed(params) {
+//   background(0);
+//   fill(mouseX, mouseY, a);
+// }
