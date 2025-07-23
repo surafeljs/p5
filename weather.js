@@ -8,9 +8,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
 
   weather();
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 async function weather(params) {
   try {
