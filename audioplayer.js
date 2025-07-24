@@ -4,7 +4,7 @@ let a;
 let b;
 function preload(params) {
   audios = createAudio("ሮፍናን - ሦሥት III ROPHNAN - SOST.mp4");
-  slider = createSlider(a, b, slider.value());
+  slider = createSlider(0, audios.duration(), 0, 0.01);
 }
 function setup() {
   createCanvas(500, 400);
@@ -14,6 +14,13 @@ function setup() {
 function draw(params) {
   audios.showControls();
 
+  if (slider) {
+    if (abs(audios.time() - slider.value()) > 0.05) {
+      audios.time(slider.value());
+    }
+
+    slider.value(audios.time());
+  }
   a = audios.time();
   b = audios.time();
 
